@@ -1,14 +1,14 @@
-const sayHello = (name) => console.log("Hi " + name);
-const sayHello2 = (name, greet = "Hello ") => console.log(greet + name);
-const sayHello3 = () => console.log("Hi hard-coded");
-const sayHello4 = (name) => "Hi " + name;
+const sayHello = (name) => console.log('Hi ' + name);
+const sayHello2 = (name, greet = 'Hello ') => console.log(greet + name);
+const sayHello3 = () => console.log('Hi hard-coded');
+const sayHello4 = (name) => 'Hi ' + name;
 
-sayHello("Daniel");
-sayHello2("Daniel", "Hi ");
+sayHello('Daniel');
+sayHello2('Daniel', 'Hi ');
 sayHello3();
-console.log(sayHello4("Daniel"));
+console.log(sayHello4('Daniel'));
 
-sayHello2("Daniel");
+sayHello2('Daniel');
 
 function checkInput(cb, ...strings) {
   let hasEmptyText = false;
@@ -25,10 +25,10 @@ function checkInput(cb, ...strings) {
 
 checkInput(
   () => {
-    console.log("All not empty!");
+    console.log('All not empty!');
   },
-  "Hello",
-  "Hi",
-  "12",
-  "a"
+  'Hello',
+  'Hi',
+  '12',
+  'a'
 );
